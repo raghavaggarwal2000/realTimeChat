@@ -32,7 +32,7 @@ app.use("/message", messageRoutes);
 const __dirname1 = path.resolve();
 
 if(process.env.NODE_ENV === "production"){
-
+    console.log("just checking here")
     app.use(express.static(path.join(__dirname1, "/frontend/build")))
 
     app.get("*",(req,res) =>{
