@@ -53,7 +53,7 @@ const server = app.listen(PORT, (err) =>{
 const io = require("socket.io")(server, {
     pingTimeout: 60000, // if there is no work for socket.io for 60secs it will close the connection to save the bandwidth
     cors: {
-        origin: "http://localhost:3000"
+        origin: "*:*"
     }
 });
 

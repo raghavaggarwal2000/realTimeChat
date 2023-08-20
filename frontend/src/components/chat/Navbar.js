@@ -145,7 +145,7 @@ const Navbar = () => {
                 <MenuButton as = {Button} rightIcon={<ChevronDownIcon />}>
                     <Avatar size = "sm" cursor={"pointer"} name= {user.name} src={user.pic}/>
                 </MenuButton>
-                <MenuList color={"black"}>
+                <MenuList color={"white"}>
                     <ProfileModal user = {user}>  
                         <MenuItem>My Profile</MenuItem>
                     </ProfileModal>
